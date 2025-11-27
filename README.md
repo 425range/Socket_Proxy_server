@@ -22,8 +22,9 @@ Socket_Proxy_server는 Linux 환경에서 C 언어 기반 소켓 프로그래밍
 
 
 - **URL 캐싱 (Caching Proxy)**  
-  이전에 접속한 적이 있던 url을 파일 시스템에 저장한 후, 동일한 요청이 반복될 경우
+  이전에 접속한 적이 있던 url을 파일 시스템에 저장한 후, 동일한 요청이 반복될 경우  
   SHA1 방식으로 해싱된 url을 복호화하여캐시된 응답을 바로 제공하여 서버 부하와 지연을 줄입니다.
+  
   <img width="721" height="1029" alt="image" src="https://github.com/user-attachments/assets/c6ea6b37-49ff-4b90-aafe-ff1a30945ffd" />
 
 
@@ -47,10 +48,10 @@ cd Socket_Proxy_server
 # 빌드  
 make  
 
-# 실행 (포트 8080 등)
+# 실행 (포트 8080 등)  
 ./proxy_cache <listen_port>  
 
-# 이후 브라우저 또는 HTTP 클라이언트에서
+# 이후 브라우저 또는 HTTP 클라이언트에서  
 # localhost:<listen_port>를 프록시로 설정하면 동작합니다.
 
 
