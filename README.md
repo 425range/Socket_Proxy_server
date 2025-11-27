@@ -39,20 +39,19 @@ Socket_Proxy_server는 Linux 환경에서 C 언어 기반 소켓 프로그래밍
 
 ---
 
-## 🛠 빌드 & 실행 방법  
+## 빌드 & 실행 방법  
 
-# 소스 다운로드  
+### 소스 다운로드  
 git clone https://github.com/425range/Socket_Proxy_server.git  
 cd Socket_Proxy_server  
 
-# 빌드  
+### 빌드  
 make  
 
-# 실행 (포트 8080 등)  
+### 실행 (포트 8080 등)  
 ./proxy_cache <listen_port>  
 
-# 이후 브라우저 또는 HTTP 클라이언트에서  
-# localhost:<listen_port>를 프록시로 설정하면 동작합니다.
+### 이후 브라우저 또는 HTTP 클라이언트에서 localhost:<listen_port>를 프록시로 설정하면 동작합니다.
 
 
 ## 활용 사례 및 확장 아이디어
