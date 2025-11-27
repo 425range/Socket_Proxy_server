@@ -17,10 +17,15 @@ Socket_Proxy_server는 Linux 환경에서 C 언어 기반 소켓 프로그래밍
 ## 주요 기능  
 
 - **프록시 중계 (Proxy Forwarding)**  
-  클라이언트의 http 요청을 받아 원격 서버로 전달하고, 응답을 다시 클라이언트에 반환합니다.  
+  클라이언트의 http 요청을 받아 원격 서버로 전달하고, 응답을 다시 클라이언트에 반환합니다.
+  <img width="650" height="719" alt="image" src="https://github.com/user-attachments/assets/38c4cfcb-8777-47ba-a15c-1a8d4de11d64" />
+
 
 - **URL 캐싱 (Caching Proxy)**  
-  동일한 요청이 반복될 경우, 캐시된 응답을 바로 제공하여 서버 부하와 지연을 줄입니다.  
+  이전에 접속한 적이 있던 url을 파일 시스템에 저장한 후, 동일한 요청이 반복될 경우
+  SHA1 방식으로 해싱된 url을 복호화하여캐시된 응답을 바로 제공하여 서버 부하와 지연을 줄입니다.
+  <img width="721" height="1029" alt="image" src="https://github.com/user-attachments/assets/c6ea6b37-49ff-4b90-aafe-ff1a30945ffd" />
+
 
 - **동시 접속 처리 및 안정성 보장**  
   lock / semaphore를 이용하여 다수 클라이언트의 동시 요청을 제어하고, race condition, 데이터 손상 방지를 구현합니다.  
